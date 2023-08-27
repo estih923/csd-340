@@ -1,0 +1,59 @@
+ {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: #003366;  
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    text-align: center;
+    padding: 2% 0;
+}
+
+#image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 10%;
+}
+
+.book h3 {
+    color: #003366;
+    margin-top: 0;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #003366;  
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: #003366;
+}
+
+h1 {
+    color: #003366;
+    font-weight: 700;  
+    margin-bottom: 1em;
+}
+
+a {
+    color: #0077CC; 
+    text-decoration: none;
+    border-bottom: 2px solid #0077CC;
+    padding-bottom: 2px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+a:hover {
+    color: #003366;
+    border-color: #003366;
+}
