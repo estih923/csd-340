@@ -1,0 +1,88 @@
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2980b9;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 400;
+    margin: 60px 0; /* Added more vertical spacing */
+}
+
+#navbar {
+    background-color: #2980b9;
+    border-bottom: 15px solid #1a1a1a;
+    text-align: left; /* Left-align the links */
+    padding-left: 20px; /* Add left padding */
+}
+
+#navbar a {
+    display: inline; /* Display links inline */
+    color: white;
+    text-align: left; /* Left-align the links */
+    padding: 10px 16px; /* Adjust padding */
+    text-decoration: none;
+    font-size: 13px; /* Smaller font size for links */
+    margin-right: 10px; /* Add right margin to separate links */
+}
+
+#container {
+    margin-top: 2%;
+    margin-left: 2%; /* Adjust left margin */
+    padding: 10px;
+    width: 30%; /* Make the container narrower */
+    float: left; /* Align to the left */
+    background-color: white; /* Darker background color */
+    clear: both; /* Clear floating elements */
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: white;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 1.5em; /* 25% smaller font size */
+    color: #3498db; /* Blue color for the font */
+    margin-top: 10px; /* More vertical spacing below the title */
+}
+
+.card-content {
+    padding: 2px 16px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #2980b9;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: right; /* Right-align the text */
+    height: 50px;
+    align-items: center;
+}
+
+.back-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    padding-right: 10px;
+    font-style: italic;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
