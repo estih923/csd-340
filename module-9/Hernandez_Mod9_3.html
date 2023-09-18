@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+    <h1>Assignment 9.3: JavaScript - Part 1</h1>
+    
+    <p>Once upon a time, in a land far, far away, there lived a curious traveler named Alice. She had a penchant for <span id="word1">_______</span> and a fascination with the <span id="word2">_______</span>. One sunny morning, as she sipped her tea and gazed out of her window, she decided it was time for a new <span id="word3">_______</span>. She packed her bags, kissed her cat goodbye, and set off on a quest to discover hidden <span id="word4">_______</span> in the enchanted forest.</p>
+    
+    <script>
+        // JavaScript variables holding string inputs for span tags
+        var word1 = "adventure";
+        var word2 = "unknown";
+        var word3 = "journey";
+        var word4 = "treasures";
+        
+        // Function to replace the underscores with the respective words
+        function replaceWord(id, word) {
+            var span = document.getElementById(id);
+            span.innerHTML = word;
+        }
+    </script>
+    
+    <button onclick="replaceWord('word1', word1)">Replace Word 1</button>
+    <button onclick="replaceWord('word2', word2)">Replace Word 2</button>
+    <button onclick="replaceWord('word3', word3)">Replace Word 3</button>
+    <button onclick="replaceWord('word4', word4)">Replace Word 4</button>
+</body>
+</html>
