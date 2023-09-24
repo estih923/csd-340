@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        .image-container {
+            display: inline-block;
+            margin: 10px;
+            transition: transform 0.5s ease;
+        }
+
+        .image-container:hover {
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    <h2>CSD 340 Web Development with HTML and CSS</h2>
+
+    <div class="image-container" onclick="toggleImage(this)">
+        <img src="cave_02.jpg" alt="Cave" id="caveImage" />
+    </div>
+
+    <div class="image-container" onclick="toggleImage(this)">
+        <img src="moon_02.jpg" alt="Moon" id="moonImage" />
+    </div>
+
+    <script>
+        function toggleImage(imageContainer) {
+            const image = imageContainer.querySelector("img");
+            if (image.src.endsWith("01.jpg")) {
+                image.src = image.src.replace("01.jpg", "02.jpg");
+            } else {
+                image.src = image.src.replace("02.jpg", "01.jpg");
+            }
+        }
+    </script>
+</body>
+</html>
