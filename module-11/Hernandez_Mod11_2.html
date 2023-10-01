@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+    <p>This is an interactive To Do List. Type in your 1st item in the text box. Then Click Add. Click the Display button to see current items in the list. Click Delete Last Entry if you'd like to remove the last entry.</p>
+
+    <input type="text" id="inputText">
+    <button onclick="addElement()">Add</button>
+    <button onclick="deleteLastEntry()">Delete Last Entry</button>
+    <button onclick="displayArray()">Display</button>
+
+    <div id="displayArea"></div>
+
+    <script>
+        let array = [];
+
+        function addElement() {
+            let inputText = document.getElementById("inputText").value;
+            array.push(inputText);
+            alert("Added: " + inputText + " at index " + array.length);
+        }
+
+        function deleteLastEntry() {
+            if (array.length > 0) {
+                array.pop();
+                alert("Last entry deleted.");
+            } else {
+                alert("Array is empty.");
+            }
+        }
+
+        function displayArray() {
+            let displayArea = document.getElementById("displayArea");
+            displayArea.innerHTML = ""; // Clear previous content
+
+            if (array.length > 0) {
+                for (let i = 0; i < array.length; i++) {
+                    let item = document.createElement("p");
+                    item.textContent = (i + 1) + '. ' + array[i];
+                    displayArea.appendChild(item);
+                }
+            } else {
+                let emptyMessage = document.createElement("p");
+                emptyMessage.textContent = "Array is empty.";
+                displayArea.appendChild(emptyMessage);
+            }
+        }
+    </script>
+</body>
+
+</html>
