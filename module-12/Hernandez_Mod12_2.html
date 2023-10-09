@@ -1,0 +1,54 @@
+<!-- Estiven Hernandez
+10/7/23
+Module 12 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script src="Hernandez_Mod12_2.js"></script>
+    <style>
+        /* Added CSS styles for the red box outline */
+        .box-outline {
+            border: 2px solid red;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 style="text-align: center;">Assignment 12.2: JavaScript - Part 4</h1>
+        
+        
+        <div class="box-outline" style="width: 45%; float: left;">
+            <h3>Top 10 Favorite Books</h3>
+            <ol id="book-list">
+                
+            </ol>
+            <button onclick="sortBooks('asc')">Top to Bottom</button>
+            <button onclick="sortBooks('desc')">Bottom to Top</button>
+        </div>
+
+        
+        <div class="box-outline" style="width: 45%; float: right;">
+            <h3>Five Things I’ve Learned Since the Course Started</h3>
+            <ul>
+                <li>Visual appeal using embellishments is highly intentional and thought out in its design</li>
+                <li>Properly setting up a GitHub page to view html files</li>
+                <li>Understanding HTML coding with headings</li>
+                <li>Writing working cohesive CSS coding</li>
+                <li>How to implement styles to the my site using HTML</li>
+            </ul>
+        </div>
+
+        <div style="width: 100%; clear: both; margin-top: 60%;">
+            <a href="../index.html" style="float: right;">back to Landing Page</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
